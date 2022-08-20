@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn build:tree-sitter",
+    "build:tree-sitter": "yarn workspace tree-sitter-unpseudo build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-unpseudo",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "bindings/node",
+  "scripts": {
+    "build": "tree-sitter generate && yarn build:node",
+    "build:node": "node-gyp configure && node-gyp build"
+  },
+  "dependencies": {
+    "nan": "^2"
+  },
+  "devDependencies": {
+    "node-gyp": "^9",
+    "tree-sitter-cli": "^0.20"
+  }
+}
