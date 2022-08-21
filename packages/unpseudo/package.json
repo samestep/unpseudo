@@ -1,0 +1,17 @@
+{
+  "name": "unpseudo",
+  "version": "0.3.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "tree-sitter": "^0.20",
+    "tree-sitter-unpseudo": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "typescript": "^4"
+  }
+}

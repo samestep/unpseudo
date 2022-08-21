@@ -5,7 +5,8 @@
   "main": "bindings/node",
   "scripts": {
     "build": "tree-sitter generate && yarn build:node",
-    "build:node": "node-gyp configure && node-gyp build"
+    "build:node": "node-gyp configure && node-gyp build",
+    "parse": "tree-sitter parse"
   },
   "dependencies": {
     "nan": "^2"

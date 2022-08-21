@@ -4,9 +4,11 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn build:tree-sitter",
-    "build:tree-sitter": "yarn workspace tree-sitter-unpseudo build",
-    "format": "prettier --write ."
+    "build": "yarn build:tree-sitter-unpseudo && yarn build:unpseudo",
+    "build:tree-sitter-unpseudo": "yarn workspace tree-sitter-unpseudo build",
+    "build:unpseudo": "yarn workspace unpseudo build",
+    "format": "prettier --write .",
+    "start": "node packages/unpseudo/index.js"
   },
   "devDependencies": {
     "prettier": "^2"
